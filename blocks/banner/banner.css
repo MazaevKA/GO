@@ -1,0 +1,31 @@
+.banner__wrap {
+  position: relative;
+  height: 823px;
+}
+
+.banner__wrap:before {
+  position: absolute;
+  content: "";
+  background-image: url("img/header-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 675px;
+  height: 762px;
+  right: 0;
+  bottom: 0;
+}
+
+.page__title {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 150px;
+  line-height: 100%;
+  letter-spacing: -15px;
+}
+
+.slogan {
+  padding-left: 100px;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 50px;
+}

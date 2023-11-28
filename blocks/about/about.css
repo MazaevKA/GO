@@ -1,0 +1,77 @@
+.about__content {
+  margin-bottom: 78px;
+}
+
+.about__content-text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+
+.about__content-text:last-child {
+  margin-bottom: 0;
+}
+
+.about__blockquote {
+  position: relative;
+  padding-left: 55px;
+  margin: 0;
+}
+
+.about__blockquote-text {
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 50px;
+  text-transform: uppercase;
+  margin-bottom: 42px;
+}
+
+.about__blockquote-text--block {
+  display: block;
+}
+
+.about__blockquote-text:before {
+  position: absolute;
+  content: "";
+  background: url("img/double-quotes.svg") no-repeat center / cover;
+  width: 20px;
+  height: 20px;
+  left: 10px;
+}
+
+.about__blockquote-text:after {
+  content: "";
+  display: inline-block;
+  background: url("img/double-quotes.svg") no-repeat center / cover;
+  width: 20px;
+  height: 20px;
+  transform: rotate(180deg);
+  margin-left: 20px;
+  margin-top: 5px;
+  vertical-align: top;
+}
+
+.about__cite {
+  display: block;
+  margin: 0 0 0 auto;
+  width: 400px;
+}
+
+.about__cite-img {
+  margin-right: 30px;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  object-position: 0 -10px;
+  border-radius: 50%;
+}
+
+.about__cite-text {
+  display: inline-block;
+  width: 269px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  font-style: normal;
+}

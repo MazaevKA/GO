@@ -1,0 +1,34 @@
+.contacts__wrap {
+  width: 340px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  padding-left: 60px;
+  margin-bottom: 40px;
+  font-style: normal;
+}
+
+.contacts__address {
+  position: relative;
+}
+
+.contacts__item {
+  position: relative;
+}
+
+.contacts__item {
+  margin-bottom: 11px;
+}
+
+.contacts__item:first-child {
+  margin-bottom: 38px;
+}
+
+.contacts__item:last-child {
+  margin-bottom: 0;
+}
+
+.contacts__icon {
+  position: absolute;
+  left: -60px;
+}

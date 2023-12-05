@@ -1,5 +1,14 @@
 .about__content {
-  margin-bottom: 78px;
+  display: inline-block;
+  width: 500px;
+  vertical-align: top;
+}
+
+.about__img {
+  width: 600px;
+  margin-right: 75px;
+  font-size: 0;
+  vertical-align: top;
 }
 
 .about__content-text {

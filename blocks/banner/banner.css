@@ -1,9 +1,9 @@
-.banner__wrap {
+.banner__container {
   position: relative;
   height: 823px;
 }
 
-.banner__wrap:before {
+.banner__container:before {
   position: absolute;
   content: "";
   background-image: url("img/header-bg.png");
@@ -15,7 +15,7 @@
   bottom: 0;
 }
 
-.page__title {
+.main__title {
   text-transform: uppercase;
   font-weight: 900;
   font-size: 150px;
@@ -23,7 +23,7 @@
   letter-spacing: -15px;
 }
 
-.slogan {
+.main__slogan {
   padding-left: 100px;
   font-weight: 400;
   font-size: 28px;

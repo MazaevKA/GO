@@ -8,32 +8,29 @@
 
   <title>GO</title>
 </head>
-<body class="page">
+<body>
 
   <header class="header">
     <div class="container visually-hidden">
       <img class="logo" src="img/logo.svg" alt="Логотип сайта">
 
-      <h2 class="title">Меню</h2>
       <nav class="nav">
-        <menu class="nav__list">
+        <ul class="nav__list">
           <li class="nav__item"><a class="nav__link" href="#halls">Залы</a></li>
           <li class="nav__item"><a class="nav__link" href="#about">О нас</a></li>
           <li class="nav__item"><a class="nav__link" href="#booking">Бронь</a></li>
           <li class="nav__item"><a class="nav__link" href="#reviews">Отзывы</a></li>
           <li class="nav__item"><a class="nav__link" href="#contacts">Контакты</a></li>
-        </menu>
+        </ul>
       </nav>
     </div>
   </header>
 
   <main class="main">
     <section class="banner">
-      <div class="container">
-        <div class="banner__wrap">
-          <h1 class="page__title">GAME OVER</h1>
-          <p class="slogan">Новый формат игр и отдыха</p>
-        </div>
+      <div class="container banner__container">
+        <h1 class="main__title">GAME OVER</h1>
+        <p class="main__slogan">Новый формат игр и отдыха</p>
       </div>
     </section>
 
@@ -87,10 +84,10 @@
         <h2 class="title">Наши залы</h2>
 
         <ol class="halls__list">
-          <li class="halls__item halls__item--80s-vibes"><p class="halls__item-text">80`s vibes</p></li>
-          <li class="halls__item halls__item--star-wars"><p class="halls__item-text">Star wars</p></li>
-          <li class="halls__item halls__item--wild-west"><p class="halls__item-text">Wild west</p></li>
-          <li class="halls__item halls__item--neon-style"><p class="halls__item-text">Neon style</p></li>
+          <li class="halls__item halls__item--theme--80s-vibes"><p class="halls__item-text">80`s vibes</p></li>
+          <li class="halls__item halls__item--theme--star-wars"><p class="halls__item-text">Star wars</p></li>
+          <li class="halls__item halls__item--theme--wild-west"><p class="halls__item-text">Wild west</p></li>
+          <li class="halls__item halls__item--theme--neon-style"><p class="halls__item-text">Neon style</p></li>
         </ol>
       </div>
     </section>
@@ -99,96 +96,103 @@
       <div class="container">
         <h2 class="title">Забронировать</h2>
 
-        <form class="form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+        <form class="booking__form form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
           <fieldset class="form__fieldset">
             <legend class="form__legend">Выбери зал</legend>
-            <label class="form__label" for="vibes">
-              <input class="form__input" type="radio" id="vibes" name="halls" value="80`s vibes">80`s vibes
-            </label>
-            <label class="form__label" for="star-wars">
-              <input class="form__input" type="radio" id="star-wars" name="halls" value="star wars">star wars
-            </label>
-            <label class="form__label" for="wild-west">
-              <input class="form__input" type="radio" id="wild-west" name="halls" value="wild west">wild west
-            </label>
-            <label class="form__label" for="neon-style">
-              <input class="form__input" type="radio" id="neon-style" name="halls" value="neon style">neon style
-            </label>
+
+              <input class="form__input" type="radio" id="vibes" name="halls" value="80`s vibes">
+            <label class="form__label" for="vibes">80`s vibes</label>
+            
+              <input class="form__input" type="radio" id="star-wars" name="halls" value="star wars">
+            <label class="form__label" for="star-wars">star wars</label>
+            
+              <input class="form__input" type="radio" id="wild-west" name="halls" value="wild west">
+            <label class="form__label" for="wild-west">wild west</label>
+            
+              <input class="form__input" type="radio" id="neon-style" name="halls" value="neon style">
+            <label class="form__label" for="neon-style">neon style</label>
           </fieldset>
 
           <fieldset class="form__fieldset">
             <legend class="form__legend">Собери набор развлечений</legend>
             <fieldset class="form__fieldset">
               <legend class="form__legend">Приставки:</legend>
-              <label class="form__label" for="PlayStation">
-                <input class="form__input" type="radio" id="PlayStation" name="consoles" value="Play Station">PlayStation
-              </label>
-              <label class="form__label" for="sega">
-                <input class="form__input" type="radio" id="sega" name="consoles" value="Sega Mega Drive">Sega Mega Drive
-              </label>
-              <label class="form__label" for="xbox">
-                <input class="form__input" type="radio" id="xbox" name="consoles" value="X-box One S">X-box One s
-              </label>
-              <label class="form__label" for="dendy">
-                <input class="form__input" type="radio" id="dendy" name="consoles" value="Dendy">Dendy
-              </label>
+              
+                <input class="form__input" type="radio" id="PlayStation" name="consoles" value="Play Station">
+              <label class="form__label" for="PlayStation">PlayStation</label>
+              
+                <input class="form__input" type="radio" id="sega" name="consoles" value="Sega Mega Drive">
+              <label class="form__label" for="sega">Sega Mega Drive</label>
+              
+                <input class="form__input" type="radio" id="xbox" name="consoles" value="X-box One S">
+              <label class="form__label" for="xbox">X-box One s</label>
+              
+                <input class="form__input" type="radio" id="dendy" name="consoles" value="Dendy">
+              <label class="form__label" for="dendy">Dendy</label>
             </fieldset>
 
             <fieldset class="form__fieldset">
               <legend class="form__legend">Настольные игры:</legend>
-              <label class="form__label" for="jenga">
-                <input class="form__input" type="checkbox" id="jenga" name="table-games" value="Jenga">Jenga
-              </label>
-              <label class="form__label" for="monopoly">
-                <input class="form__input" type="checkbox" id="monopoly" name="table-games" value="Monopoly">Monopoly
-              </label>
-              <label class="form__label" for="munchkin">
-                <input class="form__input" type="checkbox" id="munchkin" name="table-games" value="Munchkin">Манчкин
-              </label>
-              <label class="form__label" for="alias">
-                <input class="form__input" type="checkbox" id="alias" name="table-games" value="Alias">Alias
-              </label>
+              
+                <input class="form__input" type="checkbox" id="jenga" name="table-games" value="Jenga">
+              <label class="form__label" for="jenga">Jenga</label>
+              
+                <input class="form__input" type="checkbox" id="monopoly" name="table-games" value="Monopoly">
+              <label class="form__label" for="monopoly">Monopoly</label>
+              
+                <input class="form__input" type="checkbox" id="munchkin" name="table-games" value="Munchkin">
+              <label class="form__label" for="munchkin">Манчкин</label>
+              
+                <input class="form__input" type="checkbox" id="alias" name="table-games" value="Alias">
+              <label class="form__label" for="alias">Alias</label>
             </fieldset>
 
             <fieldset class="form__fieldset">
               <legend class="form__legend">Дополнительно:</legend>
-              <label class="form__label" for="karaoke">
-                <input class="form__input" type="checkbox" id="karaoke" name="additionally" value="Karaoke">Karaoke
-              </label>
-              <label class="form__label" for="vr">
-                <input class="form__input" type="checkbox" id="vr" name="additionally" value="VR">VR
-              </label>
+              
+                <input class="form__input" type="checkbox" id="karaoke" name="additionally" value="Karaoke">
+              <label class="form__label" for="karaoke">Karaoke</label>
+              
+                <input class="form__input" type="checkbox" id="vr" name="additionally" value="VR">
+              <label class="form__label" for="vr">VR</label>
             </fieldset>
           </fieldset>
 
           <fieldset class="form__fieldset">
             <legend class="form__legend">Выбери дату и время</legend>
-            <label class="form__label" for="date">Дата*
-              <input class="form__input" type="date" id="date" name="date" required>
-            </label>
-            <label class="form__label" for="time">Время*
-              <input class="form__input" type="time" id="time" name="time" required>
-            </label>
-            <label class="form__label" for="people">Количество человек*
-              <input class="form__input" type="number" id="people" name="people" required>
-            </label>
-            <label class="form__label" for="name">Имя*
-              <input class="form__input" type="text" id="name" name="name" required>
-            </label>
-            <label class="form__label" for="surname">Фамилия*
-              <input class="form__input" type="text" id="surname" name="surname" required>
-            </label>
-            <label class="form__label" for="tel">Номер телефона*
-              <input class="form__input" type="tel" id="tel" name="tel" required>
-            </label>
-            <label class="form__label" for="adult">
-              <input class="form__input" type="checkbox" id="adult" name="adult">Я старше 18 лет
-            </label>
+
+            <div class="form__group">
+              <div class="form__group">
+                <label class="form__label" for="date">Дата*</label>
+                  <input class="form__input" type="date" id="date" name="date" required>
+                
+                <label class="form__label" for="time">Время*</label>
+                  <input class="form__input" type="time" id="time" name="time" required>
+              </div>
+              <label class="form__label" for="people">Количество человек*</label>
+                <input class="form__input" type="number" id="people" name="people" required>
+            </div>
+            
+            <div class="form__group">
+              <label class="form__label" for="name">Имя*</label>
+                <input class="form__input" type="text" id="name" name="name" required>
+              
+              <label class="form__label" for="surname">Фамилия*</label>
+                <input class="form__input" type="text" id="surname" name="surname" required>
+            </div>
+            
+            <div class="form__group">
+              <label class="form__label" for="tel">Номер телефона*</label>
+                <input class="form__input" type="tel" id="tel" name="tel" required>
+
+              <label class="form__label" for="email">E-mail*</label>
+                <input class="form__input" type="email" id="email" name="email">
+            </div>
           </fieldset>
-          <button>Забронировать</button>
-          <label class="form__label" for="private">
-            <input class="form__input" type="checkbox" id="private" name="private" required>Согласен на обработку данных
-          </label>
+          <button class="form__button" type="submit">Забронировать</button>
+          
+            <input class="form__input" type="checkbox" id="private" name="private" required>
+          <label class="form__label" for="private">Согласен на обработку данных</label>
         </form>
       </div>
     </section>
@@ -206,7 +210,7 @@
               <p class="about__content-text">Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу и радовать Вас топовыми игровыми разработками со всего мира.</p>
 
               <blockquote class="about__blockquote">
-                <p class="about__blockquote-text"><span  class="about__blockquote-text--block">GAME OVER &mdash;</span> это место незабываемых впечатлений</p>
+                <p class="about__blockquote-text">GAME OVER &mdash; это место незабываемых впечатлений&nbsp;</p>
                 <p class="about__cite">
                   <img class="about__cite-img" src="img/avatar.jpg" alt="Аватар">
                   <cite class="about__cite-text">Аркадий Абакшин, создатель игровой территории GAME OVER</cite>
@@ -253,63 +257,63 @@
         <h2 class="title">Частые вопросы</h2>
 
         <ul class="faq__list">
-          <li class="faq__item">Можно ли забронировать комнату?</li>
-          <li class="faq__item">Могут ли мне вернуть деньги за бронь?</li>
-          <li class="faq__item">Какая комната самая популярная?</li>
-          <li class="faq__item">Как получить VIP карту?</li>
-          <li class="faq__item">Какая комната самая популярная?</li>
+          <li class="faq__item faq__item--background--white">
+            <p class="faq__text faq__text--color--graphite">Можно ли забронировать комнату?</p>
+          </li>
+          <li class="faq__item faq__item--background--purple">
+            <p class="faq__text faq__text--color--white">Могут ли мне вернуть деньги за бронь?</p>
+          </li>
+          <li class="faq__item faq__item--background--white">
+            <p class="faq__text faq__text--color--graphite">Какая комната самая популярная?</p>
+          </li>
+          <li class="faq__item faq__item--background--purple">
+            <p class="faq__text faq__text--color--white">Как получить VIP карту?</p>
+          </li>
+          <li class="faq__item faq__item--background--white">
+            <p class="faq__text faq__text--color--graphite">Какая комната самая популярная?</p>
+          </li>
         </ul>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <section class="contacts" id="contacts">
+    <div class="contacts" id="contacts">
       <div class="container">
         <h2 class="title">Контакты</h2>
 
-        <address class="contacts__wrap">
-          <ul class="contacts__list">
-            <li class="contacts__item">
-              <p class="contacts__icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="32" viewBox="0 0 35 32" fill="none">
-                  <path d="M17.4815 0C11.338 0 6.21411 4.52938 6.21411 10.3125C6.21411 12.5126 6.93645 14.4745 8.32275 16.3129L16.6192 28.1616C17.0217 28.7376 17.9421 28.7365 18.3437 28.1616L26.6762 16.2726C28.0326 14.5175 28.7488 12.4567 28.7488 10.3125C28.7488 4.62619 23.6943 0 17.4815 0ZM17.4815 15C14.6576 15 12.3599 12.8971 12.3599 10.3125C12.3599 7.72794 14.6576 5.625 17.4815 5.625C20.3053 5.625 22.603 7.72794 22.603 10.3125C22.603 12.8971 20.3053 15 17.4815 15Z" fill="#CD06FF"/>
-                  <path d="M25.4891 21.5435L20.3313 28.9239C18.9962 30.829 15.9593 30.8228 14.6306 28.9257L9.46443 21.5454C4.91897 22.5073 2.11688 24.2693 2.11688 26.375C2.11688 30.0289 10.0333 32 17.4815 32C24.9297 32 32.846 30.0289 32.846 26.375C32.846 24.2678 30.0401 22.5048 25.4891 21.5435Z" fill="#CD06FF"/>
-                </svg>
-              </p>
-              <p class="contacts__address">г. Москва ул. Аквамарина, 16</p>
-            </li>
-            <li class="contacts__item">
-              <p class="contacts__icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="32" viewBox="0 0 35 32" fill="none">
-                  <path d="M29.1358 14.6654H32.0494C32.0494 7.82541 26.4072 2.66675 18.9237 2.66675V5.33341C24.8412 5.33341 29.1358 9.25741 29.1358 14.6654Z" fill="#CD06FF"/>
-                  <path d="M18.9382 10.6667C22.0019 10.6667 23.3086 11.8627 23.3086 14.6667H26.2222C26.2222 10.3667 23.6364 7.99999 18.9382 7.99999V10.6667ZM23.9234 17.924C23.6435 17.6911 23.2756 17.5669 22.8975 17.5776C22.5194 17.5883 22.1607 17.7331 21.897 17.9813L18.4109 21.2627C17.5718 21.116 15.8848 20.6347 14.1483 19.0493C12.4118 17.4587 11.8859 15.9107 11.73 15.148L15.3123 11.956C15.5839 11.7148 15.7422 11.3864 15.7539 11.0403C15.7656 10.6941 15.6297 10.3574 15.3749 10.1013L9.9921 4.68399C9.73722 4.42714 9.38298 4.27133 9.00462 4.24967C8.62625 4.22801 8.25356 4.3422 7.9657 4.56799L4.80447 7.04933C4.55261 7.28068 4.40228 7.58859 4.382 7.91466C4.36015 8.24799 3.94351 16.144 10.6331 22.2693C16.469 27.6093 23.7792 28 25.7924 28C26.0867 28 26.2674 27.992 26.3154 27.9893C26.6716 27.9711 27.0079 27.8329 27.2594 27.6013L29.9691 24.7067C30.2159 24.4434 30.341 24.1024 30.3176 23.7561C30.2942 23.4098 30.1242 23.0855 29.8438 22.852L23.9234 17.924Z" fill="#CD06FF"/>
-                </svg>
-              </p>
-              <a class="contacts__link contacts__link--phone" href="tel:89509302893">8(950)930-28-93</a>
-            </li>
-            <li class="contacts__item">
-              <p class="contacts__icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="32" viewBox="0 0 36 32" fill="none">
-                  <path d="M1.10021 5.94725C5.89873 9.66669 14.3187 16.2103 16.7934 18.2506C17.1256 18.526 17.4819 18.666 17.8518 18.666C18.221 18.666 18.5767 18.5273 18.9082 18.2533C21.385 16.2109 29.8049 9.66669 34.6035 5.94725C34.9023 5.71612 34.9478 5.30987 34.706 5.02731C34.1468 4.37437 33.3132 4 32.4197 4H3.28396C2.39056 4 1.55684 4.37438 0.997775 5.02738C0.755902 5.30988 0.80145 5.71612 1.10021 5.94725Z" fill="#CD06FF"/>
-                  <path d="M34.9108 7.96279C34.6526 7.85279 34.3489 7.89116 34.1341 8.05916C28.8126 12.188 22.0209 17.4804 19.8841 19.2427C18.6847 20.2336 17.0202 20.2336 15.8181 19.2414C13.5405 17.3632 5.91363 11.4289 1.56962 8.0591C1.35335 7.8911 1.04893 7.85404 0.792853 7.96273C0.535411 8.07216 0.370361 8.30785 0.370361 8.5676V25.3332C0.370361 26.804 1.67703 27.9999 3.28396 27.9999H32.4198C34.0267 27.9999 35.3333 26.804 35.3333 25.3332V8.5676C35.3333 8.30785 35.1683 8.07154 34.9108 7.96279Z" fill="#CD06FF"/>
-                </svg>
-              </p>
-              <a class="contacts__link contacts__link--mail" href="mailto:gameover@gmail.com">GameOver@gmail.com</a>
-            </li>
-          </ul>
+        <address class="contacts__items"> 
+          <p class="contacts__address contacts__address--image-location">г. Москва ул. Аквамарина, 16</p>
+          <a class="contacts__link contacts__link--image-phone" href="tel:89509302893">8(950)930-28-93</a>
+          <a class="contacts__link contacts__link--image-mail" href="mailto:gameover@gmail.com">GameOver@gmail.com</a>
         </address>
 
         <div class="social">
           <ul class="social__list">
-            <li class="social__item"><a class="social__link" href="https://vk.com/"><img class="social__img" src="blocks/social/img/icon-vk.svg" alt="Vkontakte"></a></li>
-            <li class="social__item"><a class="social__link" href="https://telegram.org/"><img class="social__img" src="blocks/social/img/icon-telegram.svg" alt="Telegram"></a></li>
-            <li class="social__item"><a class="social__link" href="https://pinterest.com/"><img class="social__img" src="blocks/social/img/icon-pinterest.svg" alt="Pinterest"></a></li>
-            <li class="social__item"><a class="social__link" href="https://www.stumbleupon.com/"><img class="social__img" src="blocks/social/img/icon-stumbleupon.svg" alt="Stumbleupon"></a></li>
+            <li class="social__item">
+              <a class="social__link" href="https://vk.com/" target="_blank">
+                <img class="social__img" src="blocks/social/img/icon-vk.svg" alt="Vkontakte">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="https://telegram.org/" target="_blank">
+                <img class="social__img" src="blocks/social/img/icon-telegram.svg" alt="Telegram">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="https://pinterest.com/" target="_blank">
+                <img class="social__img" src="blocks/social/img/icon-pinterest.svg" alt="Pinterest">
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="https://www.stumbleupon.com/" target="_blank">
+                <img class="social__img" src="blocks/social/img/icon-stumbleupon.svg" alt="Stumbleupon">
+              </a>
+            </li>
           </ul>
         </div>
       </div>
-    </section>
+    </div>
   </footer>
 
 </body>

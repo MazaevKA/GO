@@ -23,64 +23,67 @@
 }
 
 .about__blockquote {
-  position: relative;
-  padding-left: 55px;
+  padding-left: 31px;
   margin: 0;
 }
 
 .about__blockquote-text {
+  position: relative;
   font-weight: 400;
   font-size: 44px;
   line-height: 50px;
   text-transform: uppercase;
   margin-bottom: 42px;
-}
-
-.about__blockquote-text--block {
-  display: block;
+  max-width: 425px;
 }
 
 .about__blockquote-text:before {
   position: absolute;
-  content: "";
-  background: url("img/double-quotes.svg") no-repeat center / cover;
-  width: 20px;
-  height: 20px;
-  left: 10px;
+  content: "“";
+  color: #6C0287;
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 50px;
+  top: -11px;
+  left: -31px
 }
 
 .about__blockquote-text:after {
-  content: "";
+  content: "“";
   display: inline-block;
-  background: url("img/double-quotes.svg") no-repeat center / cover;
-  width: 20px;
-  height: 20px;
+  color: #6C0287;
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 20px;
   transform: rotate(180deg);
-  margin-left: 20px;
-  margin-top: 5px;
   vertical-align: top;
 }
 
 .about__cite {
   display: block;
   margin: 0 0 0 auto;
-  width: 400px;
+  text-align: right;
 }
 
 .about__cite-img {
+  display: inline-block;
+  vertical-align: middle;
   margin-right: 30px;
   width: 80px;
   height: 80px;
   object-fit: cover;
   object-position: 0 -10px;
   border-radius: 50%;
+
 }
 
 .about__cite-text {
   display: inline-block;
-  width: 269px;
+  vertical-align: middle;
+  max-width: 269px;
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
   font-style: normal;
+  text-align: left;
 }

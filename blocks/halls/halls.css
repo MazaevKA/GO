@@ -2,24 +2,35 @@
   padding: 50px 0;
 }
 
-.halls__item {
-  text-align: center;
-  padding: calc(275 / 1180 * 100%) 0;
-  margin-bottom: 60px;
+.halls__title {
+  margin-bottom: 40px;
 }
 
-.halls__item:last-child {
+.halls__list {
+  display: flow-root;
+}
+
+.halls__item {
+  float: left;
+  width: calc(50% - 10px);
+  text-align: center;
+  padding: calc(135 / 1180 * 100%) 0;
+  margin: 0 20px 20px 0;
+}
+
+.halls__item:nth-child(even) {
+  float: right;
+  margin-right: 0;
+}
+
+.halls__item:nth-last-child(-n + 2) {
   margin-bottom: 0;
 }
 
 .halls__item-text {
-  display: inline-block;
-  max-width: 230px;
   font-weight: 700;
   font-size: 70px;
   line-height: 80px;
-  text-align: center;
-  vertical-align: middle;
   text-transform: uppercase;
 }
 

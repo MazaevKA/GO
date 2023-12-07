@@ -3,6 +3,10 @@
   vertical-align: middle;
 }
 
+.social__list {
+  font-size: 0;
+}
+
 .social__item {
   display: inline-block;
   margin-right: 28px;
@@ -15,7 +19,6 @@
 .social__img {
   height: 50px;
   width: 50px;
-  vertical-align: top;
 }
 
 .social__link {

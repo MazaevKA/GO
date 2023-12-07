@@ -1,3 +1,7 @@
+.banner {
+  padding: 146px 0 50px;
+}
+
 .banner__container {
   position: relative;
   height: 823px;
@@ -15,7 +19,7 @@
   bottom: 0;
 }
 
-.main__title {
+.banner__title {
   text-transform: uppercase;
   font-weight: 900;
   font-size: 150px;
@@ -23,7 +27,7 @@
   letter-spacing: -15px;
 }
 
-.main__slogan {
+.banner__slogan {
   padding-left: 100px;
   font-weight: 400;
   font-size: 28px;

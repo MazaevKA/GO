@@ -1,3 +1,7 @@
+.faq {
+  padding: 50px 0;
+}
+
 .faq__list {
   margin: 0;
   padding: 0;
@@ -8,7 +12,6 @@
   display:flow-root;
   font-weight: 700;
   font-size: 24px;
-  padding: 30px 70px;
   margin-bottom: 20px;
   list-style: none;
 }
@@ -19,35 +22,46 @@
 
 .faq__item--background--white {
   background-color: #fff;
-  color: #1C1A1A;
+  
 }
 
 .faq__item--background--purple {
   background-color: #440F51;
+  
+}
+
+.faq__button {
+  position: relative;
+  /* display: block; */
+  line-height: 46px;
+  padding: 20px 70px;
+  text-align: start;
+  width: 100%;
+}
+
+.faq__button--color--graphite {
+  color: #1C1A1A;
+}
+
+.faq__button--color--white {
   color: #FFFFFF;
 }
 
-.faq__text {
-  position: relative;
-  display: block;
-  line-height: 46px;
-}
-
-.faq__text--color--graphite::after, .faq__text--color--white::after {
+.faq__button--color--graphite::after, .faq__button--color--white::after {
   position: absolute;
   content: "";
   display: inline-block;
   vertical-align: middle;
-  right: 0;
+  right: 70px;
   width: 46px;
   height: 46px;
 }
 
-.faq__text--color--graphite::after {
+.faq__button--color--graphite::after {
   background: url("img/open-purple.svg") no-repeat center / contain;
 }
 
-.faq__text--color--white::after {
+.faq__button--color--white::after {
 
   background: url("img/open.svg") no-repeat center / contain;
 }

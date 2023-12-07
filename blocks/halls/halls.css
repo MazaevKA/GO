@@ -1,7 +1,10 @@
+.halls {
+  padding: 50px 0;
+}
+
 .halls__item {
-  line-height: 710px;
   text-align: center;
-  padding: 0 475px;
+  padding: calc(275 / 1180 * 100%) 0;
   margin-bottom: 60px;
 }
 
@@ -11,6 +14,7 @@
 
 .halls__item-text {
   display: inline-block;
+  max-width: 230px;
   font-weight: 700;
   font-size: 70px;
   line-height: 80px;

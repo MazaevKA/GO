@@ -1,3 +1,7 @@
+.about {
+  padding: 50px 0;
+}
+
 .about__content {
   display: inline-block;
   width: 500px;
@@ -5,10 +9,14 @@
 }
 
 .about__img {
-  width: 600px;
+  width: calc(600 / 1180 * 100%);
   margin-right: 75px;
   font-size: 0;
   vertical-align: top;
+}
+
+.about__content-wrap {
+  margin-bottom: 59px;
 }
 
 .about__content-text {
@@ -19,12 +27,17 @@
 }
 
 .about__content-text:last-child {
+  
   margin-bottom: 0;
 }
 
 .about__blockquote {
-  padding-left: 31px;
+  display: flow-root;
   margin: 0;
+}
+
+.about__blockquote >:last-child {
+  float: right;
 }
 
 .about__blockquote-text {
@@ -35,6 +48,7 @@
   text-transform: uppercase;
   margin-bottom: 42px;
   max-width: 425px;
+  padding: 0 0 0 30px;
 }
 
 .about__blockquote-text:before {
@@ -45,24 +59,20 @@
   font-weight: 900;
   line-height: 50px;
   top: -11px;
-  left: -31px
+  left: 0;
 }
 
 .about__blockquote-text:after {
-  content: "“";
-  display: inline-block;
+  content: " ”";
   color: #6C0287;
   font-size: 44px;
   font-weight: 900;
-  line-height: 20px;
-  transform: rotate(180deg);
-  vertical-align: top;
 }
 
 .about__cite {
-  display: block;
-  margin: 0 0 0 auto;
-  text-align: right;
+  display: inline-block;
+  /* margin: 0 0 0 auto;
+  text-align: right; */
 }
 
 .about__cite-img {

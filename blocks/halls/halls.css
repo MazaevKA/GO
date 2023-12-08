@@ -8,9 +8,11 @@
 
 .halls__list {
   display: flow-root;
+  font-size: 0;
 }
 
 .halls__item {
+  position: relative;
   float: left;
   width: calc(50% - 10px);
   text-align: center;
@@ -27,11 +29,22 @@
   margin-bottom: 0;
 }
 
-.halls__item-text {
+.halls__item-link {
   font-weight: 700;
   font-size: 70px;
   line-height: 80px;
   text-transform: uppercase;
+}
+
+.halls__item-link::after {
+  position: absolute;
+  content: "";
+  inset: 0;
+  transition: background-color .2s ease-in;
+}
+
+.halls__item-link:hover::after {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .halls__item--theme--80s-vibes {

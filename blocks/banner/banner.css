@@ -50,13 +50,14 @@
   line-height: normal;
 }
 
-.banner__text-purple {
+.banner__text-count {
   color: #CD06FF;
   font-size: 100px;
   font-weight: 900;
 }
 
-.banner__text-purple--small-caps {
+.banner__text-purple {
+  color: #CD06FF;
   font-size: 75px;
   font-weight: 900;
   font-variant: all-small-caps;

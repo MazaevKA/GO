@@ -34,17 +34,23 @@
         <h1 class="banner__title">GAME OVER</h1>
         <p class="banner__slogan">Новый формат игр и отдыха</p>
         <div class="banner__wrap">
-          <p class="banner__text"><span class="banner__text-purple">4</span> Тематических зала</p>
-          <p class="banner__text"><span class="banner__text-purple banner__text-purple--small-caps">new</span> Новейшая аппаратура</p>
+          <p class="banner__text">
+            <span class="banner__text-count">4</span>
+            <span>Тематических зала</span>
+          </p>
+          <p class="banner__text">
+            <span class="banner__text-purple">new</span>
+            <span>Новейшая аппаратура</span>
+          </p>
         </div>
-        <button class="banner__button" type="button">Забронировать</button>
-        <button class="banner__button-down" type="button">
+        <a class="banner__button" href="#booking">Забронировать</a>
+        <a class="banner__button-down" href="#functional">
           <svg xmlns="http://www.w3.org/2000/svg" width="97" height="97" viewBox="0 0 97 97" fill="none">
             <circle cx="48.5" cy="48.5" r="48" stroke="white"/>
             <rect x="34.4255" y="43.9162" width="1.82001" height="20.0201" transform="rotate(-44.9975 34.4255 43.9162)" fill="white"/>
             <rect x="48.5807" y="58.0737" width="1.82001" height="20.0201" transform="rotate(-134.997 48.5807 58.0737)" fill="white"/>
           </svg>
-        </button>
+        </a>
       </div>
     </section>
 
@@ -53,41 +59,23 @@
         <h2 class="title functional__title">У нас есть всё для классного отдыха с друзьями!</h2>
 
         <ul class="functional__list">
-          <li class="functional__item">
-            <figure class="functional__figure">
-              <img class="functional__img" src="blocks/functional/img/vr.jpg" alt="VR очки">
-              <figcaption class="functional__figcaption">VR очки</figcaption>
-            </figure>
+          <li class="functional__item functional__item--vr">
+            <p class="functional__text">VR очки</p>
           </li>
-          <li class="functional__item">
-            <figure class="functional__figure">
-              <img class="functional__img" src="blocks/functional/img/audio.jpg" alt="Аудио-система 5.1 с отличным звуком">
-              <figcaption class="functional__figcaption">Аудио-система 5.1 с отличным звуком</figcaption>
-            </figure>
+          <li class="functional__item functional__item--audio">
+            <p class="functional__text">Аудио-система 5.1 с отличным звуком</p>
           </li>
-          <li class="functional__item">
-            <figure class="functional__figure">
-              <img class="functional__img" src="blocks/functional/img/micro.jpg" alt="Караоке 4 микрофона">
-              <figcaption class="functional__figcaption">Караоке (4 микрофона)</figcaption>
-            </figure>
+          <li class="functional__item functional__item--micro">
+            <p class="functional__text">Караоке (4 микрофона)</p>
           </li>
-          <li class="functional__item">
-            <figure class="functional__figure">
-              <img class="functional__img" src="blocks/functional/img/game.jpg" alt="Настольные игры">
-              <figcaption class="functional__figcaption">Настольные игры</figcaption>
-            </figure>
+          <li class="functional__item functional__item--game">
+            <p class="functional__text">Настольные игры</p>
           </li>
-          <li class="functional__item">
-            <figure class="functional__figure">
-              <img class="functional__img" src="blocks/functional/img/netflix.jpg" alt="Кино сервис Netflix">
-              <figcaption class="functional__figcaption">Кино сервисы Netflix, IVI, MegoGo, КиноПоиск, Okko</figcaption>
-            </figure>
+          <li class="functional__item functional__item--netflix">
+            <p class="functional__text">Кино сервисы Netflix, IVI, MegoGo, КиноПоиск, Okko</p>
           </li>
-          <li class="functional__item">
-            <figure class="functional__figure">
-              <img class="functional__img" src="blocks/functional/img/sony.jpg" alt="PlayStation 5">
-              <figcaption class="functional__figcaption">PlayStation 5</figcaption>
-            </figure>
+          <li class="functional__item functional__item--sony">
+            <p class="functional__text">PlayStation 5</p>
           </li>
         </ul>
       </div>
@@ -191,15 +179,11 @@
 
             <div class="form__group choose-date__group">
               <div class="form__group choose-date__group-time">
-                <label class="form__label choose-date__label-time" for="date">Дата</label>
-                <input class="form__input choose-date__input" type="date" id="date" name="date" required>
-                
-                <label class="form__label choose-date__label-time" for="time">Время</label>
-                <input class="form__input choose-date__input" type="time" id="time" name="time" required>
+                <input class="form__input choose-date__input" type="date" id="date" name="date" aria-label="Дата" required>
+                <input class="form__input choose-date__input" type="time" id="time" name="time" aria-label="Время" required>
               </div>
 
-              <label class="form__label choose-date__label-people" for="people">Количество человек</label>
-              <input class="form__input choose-date__input-people" type="number" id="people" name="people" required>
+              <input class="form__input choose-date__input-people" type="number" id="people" name="people" placeholder="Сколько человек" aria-label="Количество человек" required>
             </div>
             
             <div class="form__group choose-date__group-name">
@@ -353,15 +337,15 @@
         </div>
 
         <div class="contacts__column">
-          <img src="blocks/contacts/img/map.jpg" alt="геолокация на карте">
+          <img class="contacts__img" src="blocks/contacts/img/map.jpg" alt="геолокация на карте">
         </div>
       </div>
 
       <div class="footer">
         <p class="footer__text">&#169; Game Over, 2022</p>
         <div class="footer__autor">
-          <p class="footer__text">Design by Anastasia Ilina</p>
-          <p class="footer__text">ilina9825@gmail.com</p>
+          <p class="footer__text">Design by <a href="https://t.me/Mrshmallowww">Anastasia Ilina</a></p>
+          <a class="footer__text" href="mailto:ilina9825@gmail.com">ilina9825@gmail.com</a>
         </div>
       </div>
 

@@ -17,20 +17,37 @@
 
 .functional__item {
   flex: 0 1 380px;
+  min-height: 228px;
+  padding: 166px 40px 6px;
+  text-align: start;
 }
 
-.functional__figure {
-  position: relative;
-}
-
-.functional__figcaption {
-  position: absolute;
-  width: 300px;
+.functional__text {
   font-size: 20px;
   font-weight: 700;
   line-height: 28px;
-  top: 166px;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: start;
+}
+
+.functional__item--vr {
+  background: url("img/vr.jpg") no-repeat center / cover;
+}
+
+.functional__item--audio {
+  background: url("img/audio.jpg") no-repeat center / cover;
+}
+
+.functional__item--micro {
+  background: url("img/micro.jpg") no-repeat center / cover;
+}
+
+.functional__item--game {
+  background: url("img/game.jpg") no-repeat center / cover;
+}
+
+.functional__item--netflix {
+  background: url("img/netflix.jpg") no-repeat center / cover;
+}
+
+.functional__item--sony {
+  background: url("img/sony.jpg") no-repeat center / cover;
 }

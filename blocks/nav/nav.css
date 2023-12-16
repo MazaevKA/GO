@@ -1,6 +1,9 @@
 .nav__list {
   display: flex;
-  gap: 40px;
+}
+
+.nav__list > :not(:last-child) {
+  margin-right: 40px;
 }
 
 .nav__item {

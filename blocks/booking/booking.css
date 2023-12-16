@@ -17,6 +17,13 @@
   margin-bottom: 40px;
 }
 
+.form__input {
+  color: #211E1E;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
 .choose-room {
   position: relative;
   display: flex;
@@ -202,7 +209,7 @@
 }
 
 .choose-date__group {
-  
+  flex: 0 0 300px;
 }
 
 .choose-date__group-time {
@@ -212,29 +219,18 @@
   margin-bottom: 36px;
 }
 
-.choose-date__label-time {
-  display: none;
-}
-
 .choose-date__input {
   width: 134px;
-  height: 52px;
-}
-
-.choose-date__label-people {
-  display: none;
+  padding: 10px 20px;
 }
 
 .choose-date__input-people,
 .choose-date__input-email,
-.choose-date__input-tel {
-  width: 300px;
-  height: 52px;
-}
-
-.choose-date__input-name, .choose-date__input-surname {
-  width: 280px;
-  height: 52px;
+.choose-date__input-tel,
+.choose-date__input-name,
+.choose-date__input-surname {
+  width: 100%;
+  padding: 10px 20px;
 }
 
 .choose-date__label {
@@ -246,7 +242,12 @@
   gap: 6px;
 }
 
-.choose-date__group-name, .choose-date__group-contacts {
+.choose-date__group-name {
+  flex: 0 0 280px;
+  gap: 16px;
+}
+
+.choose-date__group-contacts {
   gap: 16px;
 }
 

@@ -49,6 +49,10 @@
   margin-bottom: 156px;
 }
 
+.contacts__img {
+  display: block;
+}
+
 .footer {
   display: flex;
   justify-content: space-between;

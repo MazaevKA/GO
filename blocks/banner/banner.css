@@ -1,5 +1,5 @@
 .banner {
-  padding: 146px 0 50px;
+  padding: 25px 0 50px;
 }
 
 .banner__container {
@@ -7,7 +7,7 @@
   height: 823px;
 }
 
-.banner__container:before {
+.banner__container::before {
   position: absolute;
   content: "";
   background-image: url("img/header-bg.png");
@@ -32,4 +32,51 @@
   font-weight: 400;
   font-size: 28px;
   line-height: 50px;
+  margin-bottom: 30px;
+}
+
+.banner__wrap {
+  display: flex;
+  align-items: flex-end;
+  gap: 40px;
+  margin-bottom: 150px;
+}
+
+.banner__text {
+  flex-basis: 200px;
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+  line-height: normal;
+}
+
+.banner__text-purple {
+  color: #CD06FF;
+  font-size: 100px;
+  font-weight: 900;
+}
+
+.banner__text-purple--small-caps {
+  font-size: 75px;
+  font-weight: 900;
+  font-variant: all-small-caps;
+}
+
+.banner__button {
+  color: #FFF;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  padding: 25px 69px;
+  border-radius: 10px;
+  background: #6C0287;
+}
+
+.banner__button-down {
+  position: absolute;
+  right: 50%;
+  bottom: 90px;
+  transform: translateX(50%);
+  font-size: 0;
 }

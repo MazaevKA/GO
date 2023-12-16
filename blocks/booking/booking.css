@@ -1,3 +1,274 @@
 .booking {
-  padding: 50px 0;
+  padding: 80px 0;
+  margin-bottom: 50px;
+  background-color: #440F51;
+}
+
+.form__fieldset {
+  border: none;
+  padding: 0;
+}
+
+.form__legend {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  margin-bottom: 40px;
+}
+
+.choose-room {
+  position: relative;
+  display: flex;
+  gap: 60px;
+  margin-bottom: 60px;
+}
+
+.choose-room__input {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  left: 0;
+  top: 0;
+}
+
+.choose-room__input:checked + .choose-room__label {
+  border: 2px solid #FFFFFF;
+  background-color: #440F51;
+  color: #FFFFFF;
+}
+
+.choose-room__label {
+  position: relative;
+  flex-basis: 250px;
+  color: #000;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 40px;
+  text-transform: uppercase;
+  border-radius: 8px;
+  background: #FFF;
+  padding: 5px 13px;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.collect-kits {
+  margin-bottom: 60px;
+}
+
+.collect-kits__group {
+  display: flex;
+  gap: 100px;
+  width: 980px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.game-consoles {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.game-consoles__legend {
+  text-align: start;
+}
+
+.game-consoles__label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  font-size: 22px;
+  font-weight: 400;
+  padding-left: 39px;
+  cursor: pointer;
+}
+
+.game-consoles__input {
+  position: absolute;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  left: 0;
+}
+
+.game-consoles__input::before {
+  content: "";
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #FFF;
+}
+
+.game-consoles__input:checked::after {
+  opacity: 1;
+}
+
+.game-consoles__input::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  height: 17px;
+  width: 17px;
+  background-color: #000;
+  border-radius: 50%;
+  opacity: 0;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+
+.table-games, .additionally {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.table-games__legend, .additionally__legend {
+  text-align: start;
+}
+
+.table-games__label, .additionally__label {
+  position: relative;
+  font-size: 22px;
+  font-weight: 400;
+  padding-left: 37px;
+  cursor: pointer;
+}
+
+.table-games__input, .additionally__input {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  left: 0;
+  top: 0;
+}
+
+.table-games__input::before, .additionally__input::before {
+  display: block;
+  content: "";
+  position: absolute;
+  background-color: #FFF;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.table-games__input:checked::after, .additionally__input:checked::after {
+  opacity: 1;
+}
+
+.table-games__input::after, .additionally__input::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 5px;
+  left: 4px;
+  height: 10px;
+  width: 17px;
+  border: 3px solid #000000;
+  border-top: none;
+  border-right: none;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  opacity: 0;
+  cursor: pointer;
+}
+
+.choose-date {
+  display: flex;
+  width: 980px;
+  margin: 0 auto;
+  gap: 50px;
+  margin-bottom: 40px;
+}
+
+.form__group {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.choose-date__group {
+  
+}
+
+.choose-date__group-time {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  margin-bottom: 36px;
+}
+
+.choose-date__label-time {
+  display: none;
+}
+
+.choose-date__input {
+  width: 134px;
+  height: 52px;
+}
+
+.choose-date__label-people {
+  display: none;
+}
+
+.choose-date__input-people,
+.choose-date__input-email,
+.choose-date__input-tel {
+  width: 300px;
+  height: 52px;
+}
+
+.choose-date__input-name, .choose-date__input-surname {
+  width: 280px;
+  height: 52px;
+}
+
+.choose-date__label {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  gap: 6px;
+}
+
+.choose-date__group-name, .choose-date__group-contacts {
+  gap: 16px;
+}
+
+.choose-date__group-contacts {
+  display: flex;
+  flex: 0 0 300px;
+}
+
+.form__button-wrap {
+  width: 980px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: flex-end;
+}
+
+.form__button {
+  border-radius: 10px;
+  background: #FFF;
+  color: #6C0287;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: uppercase;
+  padding: 16px 50px;
 }

@@ -11,7 +11,7 @@
 <body>
 
   <header class="header">
-    <div class="container visually-hidden">
+    <div class="container header__container">
       <img class="logo" src="img/logo.svg" alt="Логотип сайта">
 
       <nav class="nav">
@@ -23,6 +23,8 @@
           <li class="nav__item"><a class="nav__link" href="#contacts">Контакты</a></li>
         </ul>
       </nav>
+
+      <button class="header__button" type="button">Заказать звонок</button>
     </div>
   </header>
 
@@ -31,47 +33,59 @@
       <div class="container banner__container">
         <h1 class="banner__title">GAME OVER</h1>
         <p class="banner__slogan">Новый формат игр и отдыха</p>
+        <div class="banner__wrap">
+          <p class="banner__text"><span class="banner__text-purple">4</span> Тематических зала</p>
+          <p class="banner__text"><span class="banner__text-purple banner__text-purple--small-caps">new</span> Новейшая аппаратура</p>
+        </div>
+        <button class="banner__button" type="button">Забронировать</button>
+        <button class="banner__button-down" type="button">
+          <svg xmlns="http://www.w3.org/2000/svg" width="97" height="97" viewBox="0 0 97 97" fill="none">
+            <circle cx="48.5" cy="48.5" r="48" stroke="white"/>
+            <rect x="34.4255" y="43.9162" width="1.82001" height="20.0201" transform="rotate(-44.9975 34.4255 43.9162)" fill="white"/>
+            <rect x="48.5807" y="58.0737" width="1.82001" height="20.0201" transform="rotate(-134.997 48.5807 58.0737)" fill="white"/>
+          </svg>
+        </button>
       </div>
     </section>
 
-    <section class="functional visually-hidden" id="functional">
+    <section class="functional" id="functional">
       <div class="container">
-        <h2 class="title">У нас есть всё для классного отдыха с друзьями!</h2>
+        <h2 class="title functional__title">У нас есть всё для классного отдыха с друзьями!</h2>
 
         <ul class="functional__list">
           <li class="functional__item">
             <figure class="functional__figure">
-              <img class="functional__img" src="img/vr.jpg" alt="VR очки">
+              <img class="functional__img" src="blocks/functional/img/vr.jpg" alt="VR очки">
               <figcaption class="functional__figcaption">VR очки</figcaption>
             </figure>
           </li>
           <li class="functional__item">
             <figure class="functional__figure">
-              <img class="functional__img" src="img/audio.jpg" alt="Аудио-система 5.1 с отличным звуком">
+              <img class="functional__img" src="blocks/functional/img/audio.jpg" alt="Аудио-система 5.1 с отличным звуком">
               <figcaption class="functional__figcaption">Аудио-система 5.1 с отличным звуком</figcaption>
             </figure>
           </li>
           <li class="functional__item">
             <figure class="functional__figure">
-              <img class="functional__img" src="img/micro.jpg" alt="Караоке 4 микрофона">
+              <img class="functional__img" src="blocks/functional/img/micro.jpg" alt="Караоке 4 микрофона">
               <figcaption class="functional__figcaption">Караоке (4 микрофона)</figcaption>
             </figure>
           </li>
           <li class="functional__item">
             <figure class="functional__figure">
-              <img class="functional__img" src="img/game.jpg" alt="Настольные игры">
+              <img class="functional__img" src="blocks/functional/img/game.jpg" alt="Настольные игры">
               <figcaption class="functional__figcaption">Настольные игры</figcaption>
             </figure>
           </li>
           <li class="functional__item">
             <figure class="functional__figure">
-              <img class="functional__img" src="img/netflix.jpg" alt="Кино сервис Netflix">
+              <img class="functional__img" src="blocks/functional/img/netflix.jpg" alt="Кино сервис Netflix">
               <figcaption class="functional__figcaption">Кино сервисы Netflix, IVI, MegoGo, КиноПоиск, Okko</figcaption>
             </figure>
           </li>
           <li class="functional__item">
             <figure class="functional__figure">
-              <img class="functional__img" src="img/sony.jpg" alt="PlayStation 5">
+              <img class="functional__img" src="blocks/functional/img/sony.jpg" alt="PlayStation 5">
               <figcaption class="functional__figcaption">PlayStation 5</figcaption>
             </figure>
           </li>
@@ -93,106 +107,128 @@
     </section>
 
     <section class="booking" id="booking">
-      <div class="container">
-        <h2 class="title">Забронировать</h2>
+      <div class="container booking__container">
+        <h2 class="title">Забронировать зал просто</h2>
 
         <form class="booking__form form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
-          <fieldset class="form__fieldset">
-            <legend class="form__legend">Выбери зал</legend>
+          <fieldset class="form__fieldset choose-room">
+            <legend class="form__legend choose-room__legend">Выбери зал</legend>
 
-              <input class="form__input" type="radio" id="vibes" name="halls" value="80`s vibes">
-            <label class="form__label" for="vibes">80`s vibes</label>
-            
-              <input class="form__input" type="radio" id="star-wars" name="halls" value="star wars">
-            <label class="form__label" for="star-wars">star wars</label>
-            
-              <input class="form__input" type="radio" id="wild-west" name="halls" value="wild west">
-            <label class="form__label" for="wild-west">wild west</label>
-            
-              <input class="form__input" type="radio" id="neon-style" name="halls" value="neon style">
-            <label class="form__label" for="neon-style">neon style</label>
+            <input class="form__input choose-room__input" type="radio" id="vibes" name="halls" value="80`s vibes">
+            <label class="form__label choose-room__label" for="vibes">80`s vibes</label>
+
+            <input class="form__input choose-room__input" type="radio" id="star-wars" name="halls" value="star wars">
+            <label class="form__label choose-room__label" for="star-wars">star wars</label>
+
+            <input class="form__input choose-room__input" type="radio" id="wild-west" name="halls" value="wild west">
+            <label class="form__label choose-room__label" for="wild-west">wild west</label>
+
+            <input class="form__input choose-room__input" type="radio" id="neon-style" name="halls" value="neon style">
+            <label class="form__label choose-room__label" for="neon-style">neon style</label>
           </fieldset>
 
-          <fieldset class="form__fieldset">
+          <fieldset class="form__fieldset collect-kits">
             <legend class="form__legend">Собери набор развлечений</legend>
-            <fieldset class="form__fieldset">
-              <legend class="form__legend">Приставки:</legend>
-              
-                <input class="form__input" type="radio" id="PlayStation" name="consoles" value="Play Station">
-              <label class="form__label" for="PlayStation">PlayStation</label>
-              
-                <input class="form__input" type="radio" id="sega" name="consoles" value="Sega Mega Drive">
-              <label class="form__label" for="sega">Sega Mega Drive</label>
-              
-                <input class="form__input" type="radio" id="xbox" name="consoles" value="X-box One S">
-              <label class="form__label" for="xbox">X-box One s</label>
-              
-                <input class="form__input" type="radio" id="dendy" name="consoles" value="Dendy">
-              <label class="form__label" for="dendy">Dendy</label>
-            </fieldset>
 
-            <fieldset class="form__fieldset">
-              <legend class="form__legend">Настольные игры:</legend>
-              
-                <input class="form__input" type="checkbox" id="jenga" name="table-games" value="Jenga">
-              <label class="form__label" for="jenga">Jenga</label>
-              
-                <input class="form__input" type="checkbox" id="monopoly" name="table-games" value="Monopoly">
-              <label class="form__label" for="monopoly">Monopoly</label>
-              
-                <input class="form__input" type="checkbox" id="munchkin" name="table-games" value="Munchkin">
-              <label class="form__label" for="munchkin">Манчкин</label>
-              
-                <input class="form__input" type="checkbox" id="alias" name="table-games" value="Alias">
-              <label class="form__label" for="alias">Alias</label>
-            </fieldset>
+            <div class="collect-kits__group">
+              <fieldset class="form__fieldset game-consoles">
+                <legend class="form__legend game-consoles__legend">Приставки:</legend>
+                
+                <label class="form__label game-consoles__label">PlayStation 5
+                  <input class="form__input game-consoles__input" type="radio" id="PlayStation" name="consoles" value="Play Station">
+                </label>
 
-            <fieldset class="form__fieldset">
-              <legend class="form__legend">Дополнительно:</legend>
-              
-                <input class="form__input" type="checkbox" id="karaoke" name="additionally" value="Karaoke">
-              <label class="form__label" for="karaoke">Karaoke</label>
-              
-                <input class="form__input" type="checkbox" id="vr" name="additionally" value="VR">
-              <label class="form__label" for="vr">VR</label>
-            </fieldset>
+                <label class="form__label game-consoles__label">Sega Mega Drive
+                  <input class="form__input game-consoles__input" type="radio" id="sega" name="consoles" value="Sega Mega Drive">
+                </label>
+
+                <label class="form__label game-consoles__label">X-box One S
+                  <input class="form__input game-consoles__input" type="radio" id="xbox" name="consoles" value="X-box One S">
+                </label>
+
+                <label class="form__label game-consoles__label">Dendy
+                  <input class="form__input game-consoles__input" type="radio" id="dendy" name="consoles" value="Dendy">
+                </label>
+              </fieldset>
+
+              <fieldset class="form__fieldset table-games">
+                <legend class="form__legend table-games__legend">Настольные игры:</legend>
+
+                <label class="form__label table-games__label">Jenga
+                  <input class="form__input table-games__input" type="checkbox" id="jenga" name="table-games" value="Jenga">
+                </label>
+
+                <label class="form__label table-games__label">Monopoly
+                  <input class="form__input table-games__input" type="checkbox" id="monopoly" name="table-games" value="Monopoly">
+                </label>
+
+                <label class="form__label table-games__label">Манчкин
+                  <input class="form__input table-games__input" type="checkbox" id="munchkin" name="table-games" value="Munchkin">
+                </label>
+
+                <label class="form__label table-games__label">Alias
+                  <input class="form__input table-games__input" type="checkbox" id="alias" name="table-games" value="Alias">
+                </label>
+              </fieldset>
+
+              <fieldset class="form__fieldset additionally">
+                <legend class="form__legend additionally__legend">Дополнительно:</legend>
+
+                <label class="form__label additionally__label">Karaoke
+                  <input class="form__input additionally__input" type="checkbox" id="karaoke" name="additionally" value="Karaoke">
+                </label>
+
+                <label class="form__label additionally__label">VR
+                  <input class="form__input additionally__input" type="checkbox" id="vr" name="additionally" value="VR">
+                </label>
+              </fieldset>
+            </div>
+            
           </fieldset>
 
-          <fieldset class="form__fieldset">
+          <fieldset class="form__fieldset choose-date">
             <legend class="form__legend">Выбери дату и время</legend>
 
-            <div class="form__group">
-              <div class="form__group">
-                <label class="form__label" for="date">Дата*</label>
-                  <input class="form__input" type="date" id="date" name="date" required>
+            <div class="form__group choose-date__group">
+              <div class="form__group choose-date__group-time">
+                <label class="form__label choose-date__label-time" for="date">Дата</label>
+                <input class="form__input choose-date__input" type="date" id="date" name="date" required>
                 
-                <label class="form__label" for="time">Время*</label>
-                  <input class="form__input" type="time" id="time" name="time" required>
+                <label class="form__label choose-date__label-time" for="time">Время</label>
+                <input class="form__input choose-date__input" type="time" id="time" name="time" required>
               </div>
-              <label class="form__label" for="people">Количество человек*</label>
-                <input class="form__input" type="number" id="people" name="people" required>
-            </div>
-            
-            <div class="form__group">
-              <label class="form__label" for="name">Имя*</label>
-                <input class="form__input" type="text" id="name" name="name" required>
-              
-              <label class="form__label" for="surname">Фамилия*</label>
-                <input class="form__input" type="text" id="surname" name="surname" required>
-            </div>
-            
-            <div class="form__group">
-              <label class="form__label" for="tel">Номер телефона*</label>
-                <input class="form__input" type="tel" id="tel" name="tel" required>
 
-              <label class="form__label" for="email">E-mail*</label>
-                <input class="form__input" type="email" id="email" name="email">
+              <label class="form__label choose-date__label-people" for="people">Количество человек</label>
+              <input class="form__input choose-date__input-people" type="number" id="people" name="people" required>
+            </div>
+            
+            <div class="form__group choose-date__group-name">
+              <label class="form__label choose-date__label" for="name">Имя
+                <input class="form__input choose-date__input-name" type="text" id="name" name="name" required>
+              </label>
+                
+              
+              <label class="form__label choose-date__label" for="surname">Фамилия
+                <input class="form__input choose-date__input-surname" type="text" id="surname" name="surname" required>
+              </label>
+            </div>
+            
+            <div class="form__group choose-date__group-contacts">
+              <label class="form__label choose-date__label" for="tel">Номер телефона
+                <input class="form__input choose-date__input-tel" type="tel" id="tel" name="tel" required>
+              </label>
+                
+              <label class="form__label choose-date__label" for="email">E-mail
+                <input class="form__input choose-date__input-email" type="email" id="email" name="email">
+              </label>
             </div>
           </fieldset>
-          <button class="form__button" type="submit">Забронировать</button>
+
+          <div class="form__button-wrap">
+            <button class="form__button" type="submit">Забронировать</button>
+          </div>
           
-            <input class="form__input" type="checkbox" id="private" name="private" required>
-          <label class="form__label" for="private">Согласен на обработку данных</label>
+
         </form>
       </div>
     </section>
@@ -281,36 +317,54 @@
     <div class="container">
       <h2 class="title">Контакты</h2>
 
-      <address class="contacts__items"> 
-        <p class="contacts__item contacts__item--address contacts__item--image-location">г. Москва ул. Аквамарина, 16</p>
-        <a class="contacts__item contacts__item--link contacts__item--image-phone" href="tel:89509302893">8(950)930-28-93</a>
-        <a class="contacts__item contacts__item--link contacts__item--image-mail" href="mailto:gameover@gmail.com">GameOver@gmail.com</a>
-      </address>
+      <div class="contacts__wrap">
+        <div class="contacts__column">
+          <address class="contacts__items"> 
+            <p class="contacts__item contacts__item--address contacts__item--image-location">г. Москва ул. Аквамарина, 16</p>
+            <a class="contacts__item contacts__item--link contacts__item--image-phone" href="tel:89509302893">8(950)930-28-93</a>
+            <a class="contacts__item contacts__item--link contacts__item--image-mail" href="mailto:gameover@gmail.com">GameOver@gmail.com</a>
+          </address>
 
-      <div class="social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link" href="https://vk.com/" target="_blank">
-              <img class="social__img" src="blocks/social/img/icon-vk.svg" alt="Vkontakte">
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="https://telegram.org/" target="_blank">
-              <img class="social__img" src="blocks/social/img/icon-telegram.svg" alt="Telegram">
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="https://pinterest.com/" target="_blank">
-              <img class="social__img" src="blocks/social/img/icon-pinterest.svg" alt="Pinterest">
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="https://www.stumbleupon.com/" target="_blank">
-              <img class="social__img" src="blocks/social/img/icon-stumbleupon.svg" alt="Stumbleupon">
-            </a>
-          </li>
-        </ul>
+          <div class="social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link" href="https://vk.com/" target="_blank">
+                  <img class="social__img" src="blocks/social/img/icon-vk.svg" alt="Vkontakte">
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="https://telegram.org/" target="_blank">
+                  <img class="social__img" src="blocks/social/img/icon-telegram.svg" alt="Telegram">
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="https://pinterest.com/" target="_blank">
+                  <img class="social__img" src="blocks/social/img/icon-pinterest.svg" alt="Pinterest">
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="https://www.stumbleupon.com/" target="_blank">
+                  <img class="social__img" src="blocks/social/img/icon-stumbleupon.svg" alt="Stumbleupon">
+                </a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="contacts__column">
+          <img src="blocks/contacts/img/map.jpg" alt="геолокация на карте">
+        </div>
       </div>
+
+      <div class="footer">
+        <p class="footer__text">&#169; Game Over, 2022</p>
+        <div class="footer__autor">
+          <p class="footer__text">Design by Anastasia Ilina</p>
+          <p class="footer__text">ilina9825@gmail.com</p>
+        </div>
+      </div>
+
     </div>
   </footer>
 

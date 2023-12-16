@@ -1,0 +1,36 @@
+.functional {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.functional__title {
+  width: 880px;
+  /* margin: 0 auto; */
+  display: inline-block;
+}
+
+.functional__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 20px;
+}
+
+.functional__item {
+  flex: 0 1 380px;
+}
+
+.functional__figure {
+  position: relative;
+}
+
+.functional__figcaption {
+  position: absolute;
+  width: 300px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  top: 166px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: start;
+}

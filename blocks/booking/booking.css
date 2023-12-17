@@ -59,7 +59,22 @@
   background: #FFF;
   padding: 5px 13px;
   cursor: pointer;
-  border: 2px solid transparent;
+  border: 3px solid transparent;
+}
+
+.choose-room__label:hover {
+  border: 3px solid #640AA3;
+  background: #EADEED;
+}
+
+.choose-room__label:focus {
+  border: 3px solid #640AA3;
+  background: #FFF;
+}
+
+.choose-room__label:active {
+  border: 3px solid #FFF;
+  background: #6C0287;
 }
 
 .collect-kits {
@@ -113,6 +128,11 @@
   border-radius: 50%;
   cursor: pointer;
   background-color: #FFF;
+  border: 1px solid transparent;
+}
+
+.game-consoles__input:focus::before {
+  border: 1px solid #CD06FF;
 }
 
 .game-consoles__input:checked::after {
@@ -170,10 +190,15 @@
   width: 25px;
   height: 25px;
   cursor: pointer;
+  border: 1px solid transparent;
 }
 
 .table-games__input:checked::after, .additionally__input:checked::after {
   opacity: 1;
+}
+
+.table-games__input:focus::before, .additionally__input:focus::before {
+  border: 1px solid #CD06FF;
 }
 
 .table-games__input::after, .additionally__input::after {
@@ -264,6 +289,7 @@
 }
 
 .form__button {
+  border: 3px solid transparent;
   border-radius: 10px;
   background: #FFF;
   color: #6C0287;
@@ -273,3 +299,34 @@
   text-transform: uppercase;
   padding: 16px 50px;
 }
+
+.form__button:hover {
+  border: 3px solid #6C0287;
+  background: #EADEED;
+}
+
+.form__button:focus {
+  border: 3px solid #6C0287;
+  background: #FFF;
+}
+
+.form__button:active {
+  border: 3px solid transparent;
+  background: #EADEED;
+}
+
+.form__input {
+  border: 2px solid transparent;
+}
+
+.choose-date__input-tel:focus,
+.choose-date__input-email:focus,
+.choose-date__input:focus,
+.choose-date__input-name:focus,
+.choose-date__input-surname:focus,
+.choose-date__input-people:focus {
+  border: 2px solid #CD06FF;
+}
+/* .form__input:focus {
+  border: 2px solid #CD06FF;
+} */

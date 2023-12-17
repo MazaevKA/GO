@@ -63,7 +63,7 @@
   font-variant: all-small-caps;
 }
 
-.banner__button {
+.banner__link {
   color: #FFF;
   font-size: 26px;
   font-weight: 700;
@@ -74,10 +74,38 @@
   background: #6C0287;
 }
 
-.banner__button-down {
+.banner__link:hover {
+  background: #840AA3;
+}
+
+.banner__link:focus {
+  background: #840AA3;
+}
+
+.banner__link:active {
+  background: #640AA3;
+}
+
+
+.banner__link-down {
   position: absolute;
   right: 50%;
   bottom: 90px;
   transform: translateX(50%);
   font-size: 0;
+  width: 97px;
+  height: 97px;
+  background: url("img/down.svg") no-repeat center / cover;
+}
+
+.banner__link-down:hover {
+  background: url("img/down-hover.svg") no-repeat center / cover;
+}
+
+.banner__link-down:focus {
+  background: url("img/down-focus.svg") no-repeat center / cover;
+}
+
+.banner__link-down:active {
+  background: url("img/down-active.svg") no-repeat center / cover;
 }

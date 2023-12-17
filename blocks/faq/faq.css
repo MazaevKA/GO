@@ -55,6 +55,19 @@
   right: 70px;
   width: 46px;
   height: 46px;
+  transition: background .2s ease-in;
+}
+
+.faq__button--color--graphite::after {
+  background: url("img/open-purple.svg") no-repeat center / contain;
+}
+
+.faq__button--color--graphite:hover::after {
+  background: url("img/open-purple-hover.svg") no-repeat center / contain;
+}
+
+.faq__button--color--graphite:active::after {
+  background: url("img/open-purple-active.svg") no-repeat center / contain;
 }
 
 .faq__button--color--graphite::after {
@@ -62,6 +75,13 @@
 }
 
 .faq__button--color--white::after {
-
   background: url("img/open.svg") no-repeat center / contain;
+}
+
+.faq__button--color--white:hover::after {
+  background: url("img/open-hover.svg") no-repeat center / contain;
+}
+
+.faq__button--color--white:active::after {
+  background: url("img/open-active.svg") no-repeat center / contain;
 }

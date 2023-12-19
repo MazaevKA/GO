@@ -26,6 +26,19 @@
 
 .contacts__item--link {
   margin-bottom: 11px;
+  transition: color .2s ease-in;
+}
+
+.contacts__item--link:hover {
+  color: #6C0287;
+}
+
+.contacts__item--link:focus {
+  color: #6C0287;
+}
+
+.contacts__item--link:active {
+  color: #640AA3;
 }
 
 .contacts__item--image-location {
@@ -67,4 +80,20 @@
 
 .footer__text:not(:last-child) {
   margin-bottom: 6px;
+}
+
+.footer__author-link {
+  transition: color .2s ease-in;
+}
+
+.footer__author-link:hover {
+  color: #6C0287;
+}
+
+.footer__author-link:focus {
+  color: #6C0287;
+}
+
+.footer__author-link:active {
+  color: #640AA3;
 }

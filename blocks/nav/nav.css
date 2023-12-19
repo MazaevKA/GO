@@ -12,3 +12,19 @@
   line-height: 50px;
   text-transform: uppercase;
 }
+
+.nav__link {
+  transition: color .2s ease-in;
+}
+
+.nav__link:hover {
+  color: #6C0287;
+}
+
+.nav__link:focus {
+  color: #6C0287;
+}
+
+.nav__link:active {
+  color: #640AA3;
+}

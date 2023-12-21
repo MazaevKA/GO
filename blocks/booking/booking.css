@@ -299,6 +299,7 @@
   line-height: 28px;
   text-transform: uppercase;
   padding: 16px 50px;
+  transition: background-color, border .2s ease-in;
 }
 
 .form__button:hover {

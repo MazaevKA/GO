@@ -5,8 +5,8 @@
 <g id="open">
 <circle id="Ellipse 3" cx="23" cy="23" r="22.5" fill="white" stroke="white"/>
 <g id="Vector">
-<path d="M22.8305 14H23.5085V34H22.8305V14Z" fill="#6C0287"/>
-<path d="M13 24.1695V23.4915H33V24.1695H13Z" fill="#6C0287"/>
+<path d="M22.8305 14H23.5085V34H22.8305V14Z" fill="var(--dark-magenta, #6C0287)"/>
+<path d="M13 24.1695V23.4915H33V24.1695H13Z" fill="var(--dark-magenta, #6C0287)"/>
 </g>
 </g>
 </g>

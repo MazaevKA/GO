@@ -51,40 +51,40 @@
 }
 
 .banner__text-count {
-  color: #CD06FF;
+  color: var(--vivid-magenta, #CD06FF);
   font-size: 100px;
   font-weight: 900;
 }
 
 .banner__text-purple {
-  color: #CD06FF;
+  color: var(--vivid-magenta, #CD06FF);
   font-size: 75px;
   font-weight: 900;
   font-variant: all-small-caps;
 }
 
 .banner__link {
-  color: #FFF;
+  color: var(--text-color, #FFFFFF);
   font-size: 26px;
   font-weight: 700;
   line-height: 30px;
   text-transform: uppercase;
   padding: 25px 69px;
   border-radius: 10px;
-  background: #6C0287;
+  background-color: var(--dark-magenta, #6C0287);
   transition: background-color .2s ease-in;
 }
 
 .banner__link:hover {
-  background-color: #840AA3;
+  background-color: var(--dark-magenta, #840AA3);
 }
 
 .banner__link:focus {
-  background-color: #840AA3;
+  background-color: var(--dark-magenta, #840AA3);
 }
 
 .banner__link:active {
-  background-color: #640AA3;
+  background-color: var(--dark-violet, #640AA3);
 }
 
 

@@ -23,6 +23,10 @@
   transition: scale .2s ease-in;
 }
 
+.functional__item:nth-child(3n + 2) {
+  transform: translateY(70px);
+}
+
 .functional__item:hover {
   scale: 110%;
 }

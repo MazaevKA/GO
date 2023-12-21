@@ -1,7 +1,7 @@
 .booking {
   padding: 80px 0;
   margin-bottom: 50px;
-  background-color: #440F51;
+  background-color: var(--very-dark-magenta, #440F51);
 }
 
 .form__fieldset {
@@ -41,9 +41,9 @@
 }
 
 .choose-room__input:checked + .choose-room__label {
-  border: 2px solid #FFFFFF;
-  background-color: #440F51;
-  color: #FFFFFF;
+  border: 2px solid var(--white-color, #FFFFFF);
+  background-color: var(--very-dark-magenta, #440F51);
+  color: var(--text-color, #FFFFFF);
 }
 
 .choose-room__label {
@@ -56,7 +56,7 @@
   line-height: 40px;
   text-transform: uppercase;
   border-radius: 8px;
-  background: #FFF;
+  background-color: var(--white-color, #FFFFFF);
   padding: 5px 13px;
   cursor: pointer;
   border: 3px solid transparent;
@@ -64,18 +64,18 @@
 }
 
 .choose-room__label:hover {
-  border: 3px solid #640AA3;
-  background-color: #EADEED;
+  border: 3px solid var(--dark-violet, #640AA3);
+  background-color: var(--light-magenta, #EADEED);
 }
 
 .choose-room__label:focus {
-  border: 3px solid #640AA3;
-  background-color: #FFF;
+  border: 3px solid var(--dark-violet, #640AA3);
+  background-color: var(--white-color, #FFFFFF);
 }
 
 .choose-room__label:active {
-  border: 3px solid #FFF;
-  background-color: #6C0287;
+  border: 3px solid var(--white-color, #FFFFFF);
+  background-color: var(--dark-magenta, #6C0287);
 }
 
 .collect-kits {
@@ -128,12 +128,12 @@
   height: 27px;
   border-radius: 50%;
   cursor: pointer;
-  background-color: #FFF;
+  background-color: var(--white-color, #FFFFFF);
   border: 1px solid transparent;
 }
 
 .game-consoles__input:focus::before {
-  border: 1px solid #CD06FF;
+  border: 1px solid var(--vivid-magenta, #CD06FF);
 }
 
 .game-consoles__input:checked::after {
@@ -185,7 +185,7 @@
   display: block;
   content: "";
   position: absolute;
-  background-color: #FFF;
+  background-color: var(--white-color, #FFFFFF);
   top: 0;
   left: 0;
   width: 25px;
@@ -199,7 +199,7 @@
 }
 
 .table-games__input:focus::before, .additionally__input:focus::before {
-  border: 1px solid #CD06FF;
+  border: 1px solid var(--vivid-magenta, #CD06FF);
 }
 
 .table-games__input::after, .additionally__input::after {
@@ -292,8 +292,8 @@
 .form__button {
   border: 3px solid transparent;
   border-radius: 10px;
-  background: #FFF;
-  color: #6C0287;
+  background-color: var(--white-color, #FFFFFF);
+  color: var(--dark-magenta, #6C0287);
   font-size: 22px;
   font-weight: 700;
   line-height: 28px;
@@ -302,18 +302,18 @@
 }
 
 .form__button:hover {
-  border: 3px solid #6C0287;
-  background: #EADEED;
+  border: 3px solid var(--dark-magenta, #6C0287);
+  background-color: var(--light-magenta, #EADEED);
 }
 
 .form__button:focus {
-  border: 3px solid #6C0287;
-  background: #FFF;
+  border: 3px solid var(--dark-magenta, #6C0287);
+  background-color: var(--white-color, #FFFFFF);
 }
 
 .form__button:active {
   border: 3px solid transparent;
-  background: #EADEED;
+  background-color: var(--light-magenta, #EADEED);
 }
 
 .form__input {
@@ -326,8 +326,5 @@
 .choose-date__input-name:focus,
 .choose-date__input-surname:focus,
 .choose-date__input-people:focus {
-  border: 2px solid #CD06FF;
+  border: 2px solid var(--vivid-magenta, #CD06FF);
 }
-/* .form__input:focus {
-  border: 2px solid #CD06FF;
-} */

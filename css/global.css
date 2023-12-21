@@ -14,8 +14,8 @@ body {
   overflow-x: hidden;
   min-height: 100vh;
   min-width: 320px;
-  color: #FFFFFF; /* цвет текста */
-  background-color: #1B1A1B; /* цвет сайта */
+  color: var(--text-color, #FFFFFF); /* цвет текста */
+  background-color: var(--bg-color, #1B1A1B); /* цвет сайта */
   font-family: Arial, sans-serif;
   font-weight: 400;
   -webkit-font-smoothing: antialiased;

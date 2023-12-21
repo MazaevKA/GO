@@ -18,13 +18,13 @@
 }
 
 .nav__link:hover {
-  color: #6C0287;
+  color: var(--dark-magenta, #6C0287);
 }
 
 .nav__link:focus {
-  color: #6C0287;
+  color: var(--dark-magenta, #6C0287);
 }
 
 .nav__link:active {
-  color: #640AA3;
+  color: var(--dark-violet, #640AA3);
 }

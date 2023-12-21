@@ -30,15 +30,15 @@
 }
 
 .contacts__item--link:hover {
-  color: #6C0287;
+  color: var(--dark-magenta, #6C0287);
 }
 
 .contacts__item--link:focus {
-  color: #6C0287;
+  color: var(--dark-magenta, #6C0287);
 }
 
 .contacts__item--link:active {
-  color: #640AA3;
+  color: var(--dark-violet, #640AA3);
 }
 
 .contacts__item--image-location {
@@ -72,7 +72,7 @@
 }
 
 .footer__text {
-  color: #FFF;
+  color: var(--text-color, #FFFFFF);
   font-size: 14px;
   font-weight: 400;
   line-height: 16px;
@@ -87,13 +87,13 @@
 }
 
 .footer__author-link:hover {
-  color: #6C0287;
+  color: var(--dark-magenta, #6C0287);
 }
 
 .footer__author-link:focus {
-  color: #6C0287;
+  color: var(--dark-magenta, #6C0287);
 }
 
 .footer__author-link:active {
-  color: #640AA3;
+  color: var(--dark-violet, #640AA3);
 }

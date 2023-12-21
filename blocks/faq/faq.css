@@ -21,12 +21,12 @@
 }
 
 .faq__item--background--white {
-  background-color: #fff;
+  background-color: var(--white-color, #FFFFFF);
   
 }
 
 .faq__item--background--purple {
-  background-color: #440F51;
+  background-color: var(--very-dark-magenta, #440F51);
   
 }
 
@@ -44,7 +44,7 @@
 }
 
 .faq__button--color--white {
-  color: #FFFFFF;
+  color: var(--text-color, #FFFFFF);
 }
 
 .faq__button--color--graphite::after, .faq__button--color--white::after {

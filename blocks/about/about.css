@@ -54,7 +54,7 @@
 .about__blockquote-text:before {
   position: absolute;
   content: "“";
-  color: #6C0287;
+  color: var(--dark-magenta, #6C0287);
   font-size: 44px;
   font-weight: 900;
   line-height: 50px;
@@ -64,7 +64,7 @@
 
 .about__blockquote-text:after {
   content: " ”";
-  color: #6C0287;
+  color: var(--dark-magenta, #6C0287);
   font-size: 44px;
   font-weight: 900;
 }

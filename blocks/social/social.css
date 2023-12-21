@@ -25,7 +25,7 @@
   display: block;
   color: #FFFFFF;
   border: 1px solid transparent;
-  transition: color, border .2s ease-in;
+  transition:  border, color .2s ease-in;
 }
 
 .social__link:hover {

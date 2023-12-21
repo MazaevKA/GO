@@ -20,6 +20,11 @@
   min-height: 228px;
   padding: 166px 40px 6px;
   text-align: start;
+  transition: scale .2s ease-in;
+}
+
+.functional__item:hover {
+  scale: 110%;
 }
 
 .functional__text {

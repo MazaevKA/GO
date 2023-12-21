@@ -60,21 +60,22 @@
   padding: 5px 13px;
   cursor: pointer;
   border: 3px solid transparent;
+  transition: background-color, border .2s ease-in;
 }
 
 .choose-room__label:hover {
   border: 3px solid #640AA3;
-  background: #EADEED;
+  background-color: #EADEED;
 }
 
 .choose-room__label:focus {
   border: 3px solid #640AA3;
-  background: #FFF;
+  background-color: #FFF;
 }
 
 .choose-room__label:active {
   border: 3px solid #FFF;
-  background: #6C0287;
+  background-color: #6C0287;
 }
 
 .collect-kits {

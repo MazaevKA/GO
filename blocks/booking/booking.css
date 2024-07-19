@@ -1,7 +1,11 @@
 .booking {
-  padding: 80px 0;
+  padding: 78px 0;
   margin-bottom: 50px;
-  background-color: var(--very-dark-magenta, #440F51);
+  background-color: var(--very-dark-magenta, #440f51);
+}
+
+.booking__title {
+  margin-bottom: 46px;
 }
 
 .form__fieldset {
@@ -13,12 +17,12 @@
   text-align: center;
   font-size: 24px;
   font-weight: 700;
-  line-height: 28px;
-  margin-bottom: 40px;
+  line-height: 1.17;
+  margin-bottom: 39px;
 }
 
 .form__input {
-  color: #211E1E;
+  color: #211e1e;
   font-size: 18px;
   font-weight: 400;
   line-height: 28px;
@@ -29,6 +33,7 @@
   display: flex;
   gap: 60px;
   margin-bottom: 60px;
+  justify-content: space-between;
 }
 
 .choose-room__input {
@@ -41,9 +46,9 @@
 }
 
 .choose-room__input:checked + .choose-room__label {
-  border: 2px solid var(--white-color, #FFFFFF);
-  background-color: var(--very-dark-magenta, #440F51);
-  color: var(--text-color, #FFFFFF);
+  border: 2px solid var(--white-color, #ffffff);
+  background-color: var(--very-dark-magenta, #440f51);
+  color: var(--text-color, #ffffff);
 }
 
 .choose-room__label {
@@ -56,26 +61,26 @@
   line-height: 40px;
   text-transform: uppercase;
   border-radius: 8px;
-  background-color: var(--white-color, #FFFFFF);
+  background-color: var(--white-color, #ffffff);
   padding: 5px 13px;
   cursor: pointer;
   border: 3px solid transparent;
-  transition: background-color, border .2s ease-in;
+  transition: background-color, border 0.2s ease-in;
 }
 
 .choose-room__label:hover {
-  border: 3px solid var(--dark-violet, #640AA3);
-  background-color: var(--light-magenta, #EADEED);
+  border: 3px solid var(--dark-violet, #640aa3);
+  background-color: var(--light-magenta, #eadeed);
 }
 
 .choose-room__label:focus {
-  border: 3px solid var(--dark-violet, #640AA3);
-  background-color: var(--white-color, #FFFFFF);
+  border: 3px solid var(--dark-violet, #640aa3);
+  background-color: var(--white-color, #ffffff);
 }
 
 .choose-room__label:active {
-  border: 3px solid var(--white-color, #FFFFFF);
-  background-color: var(--dark-magenta, #6C0287);
+  border: 3px solid var(--white-color, #ffffff);
+  background-color: var(--dark-magenta, #6c0287);
 }
 
 .collect-kits {
@@ -84,20 +89,19 @@
 
 .collect-kits__group {
   display: flex;
-  gap: 100px;
-  width: 980px;
-  margin: 0 auto;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 170px;
 }
 
 .game-consoles {
   display: flex;
-  gap: 20px;
+  gap: 22px;
   flex-direction: column;
 }
 
 .game-consoles__legend {
   text-align: start;
+  margin-bottom: 23px;
 }
 
 .game-consoles__label {
@@ -128,12 +132,12 @@
   height: 27px;
   border-radius: 50%;
   cursor: pointer;
-  background-color: var(--white-color, #FFFFFF);
+  background-color: var(--white-color, #ffffff);
   border: 1px solid transparent;
 }
 
 .game-consoles__input:focus::before {
-  border: 1px solid var(--vivid-magenta, #CD06FF);
+  border: 1px solid var(--vivid-magenta, #cd06ff);
 }
 
 .game-consoles__input:checked::after {
@@ -154,17 +158,25 @@
   transform: translateY(-50%);
 }
 
-.table-games, .additionally {
+.table-games {
+  width: 230px;
+}
+
+.table-games,
+.additionally {
   display: flex;
   gap: 20px;
   flex-direction: column;
 }
 
-.table-games__legend, .additionally__legend {
+.table-games__legend,
+.additionally__legend {
   text-align: start;
+  margin-bottom: 25px;
 }
 
-.table-games__label, .additionally__label {
+.table-games__label,
+.additionally__label {
   position: relative;
   font-size: 22px;
   font-weight: 400;
@@ -172,7 +184,8 @@
   cursor: pointer;
 }
 
-.table-games__input, .additionally__input {
+.table-games__input,
+.additionally__input {
   position: absolute;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -181,28 +194,32 @@
   top: 0;
 }
 
-.table-games__input::before, .additionally__input::before {
+.table-games__input::before,
+.additionally__input::before {
   display: block;
   content: "";
   position: absolute;
-  background-color: var(--white-color, #FFFFFF);
-  top: 0;
-  left: 0;
-  width: 25px;
-  height: 25px;
+  background-color: var(--white-color, #ffffff);
+  top: -2px;
+  left: -2px;
+  width: 24px;
+  height: 24px;
   cursor: pointer;
   border: 1px solid transparent;
 }
 
-.table-games__input:checked::after, .additionally__input:checked::after {
+.table-games__input:checked::after,
+.additionally__input:checked::after {
   opacity: 1;
 }
 
-.table-games__input:focus::before, .additionally__input:focus::before {
-  border: 1px solid var(--vivid-magenta, #CD06FF);
+.table-games__input:focus::before,
+.additionally__input:focus::before {
+  border: 1px solid var(--vivid-magenta, #cd06ff);
 }
 
-.table-games__input::after, .additionally__input::after {
+.table-games__input::after,
+.additionally__input::after {
   content: "";
   position: absolute;
   display: block;
@@ -222,8 +239,7 @@
 
 .choose-date {
   display: flex;
-  width: 980px;
-  margin: 0 auto;
+  justify-content: center;
   gap: 50px;
   margin-bottom: 40px;
 }
@@ -264,7 +280,7 @@
   flex-direction: column;
   font-size: 14px;
   font-weight: 700;
-  line-height: 16px;
+  line-height: 1.14;
   gap: 6px;
 }
 
@@ -283,8 +299,8 @@
 }
 
 .form__button-wrap {
-  width: 980px;
   display: flex;
+  width: 980px;
   margin: 0 auto;
   justify-content: flex-end;
 }
@@ -292,29 +308,29 @@
 .form__button {
   border: 3px solid transparent;
   border-radius: 10px;
-  background-color: var(--white-color, #FFFFFF);
-  color: var(--dark-magenta, #6C0287);
+  background-color: var(--white-color, #ffffff);
+  color: var(--dark-magenta, #6c0287);
   font-size: 22px;
   font-weight: 700;
-  line-height: 28px;
+  line-height: 1.27;
   text-transform: uppercase;
-  padding: 16px 50px;
-  transition: background-color, border .2s ease-in;
+  padding: 13px 47px;
+  transition: background-color, border 0.2s ease-in;
 }
 
 .form__button:hover {
-  border: 3px solid var(--dark-magenta, #6C0287);
-  background-color: var(--light-magenta, #EADEED);
+  border: 3px solid var(--dark-magenta, #6c0287);
+  background-color: var(--light-magenta, #eadeed);
 }
 
 .form__button:focus {
-  border: 3px solid var(--dark-magenta, #6C0287);
-  background-color: var(--white-color, #FFFFFF);
+  border: 3px solid var(--dark-magenta, #6c0287);
+  background-color: var(--white-color, #ffffff);
 }
 
 .form__button:active {
   border: 3px solid transparent;
-  background-color: var(--light-magenta, #EADEED);
+  background-color: var(--light-magenta, #eadeed);
 }
 
 .form__input {
@@ -327,5 +343,336 @@
 .choose-date__input-name:focus,
 .choose-date__input-surname:focus,
 .choose-date__input-people:focus {
-  border: 2px solid var(--vivid-magenta, #CD06FF);
+  border: 2px solid var(--vivid-magenta, #cd06ff);
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .booking {
+    padding: 60px 0px;
+    margin-bottom: 35px;
+  }
+
+  .booking__title {
+    margin-bottom: 40px;
+    line-height: 1.34;
+  }
+
+  .form__legend {
+    margin-bottom: 26px;
+  }
+
+  .choose-room__label {
+    font-size: 20px;
+    line-height: 1.2;
+    border-radius: 6px;
+    padding: 6px 0;
+    cursor: pointer;
+    border: 3px solid transparent;
+    transition: background-color, border 0.2s ease-in;
+  }
+
+  .collect-kits__group {
+    gap: 109px;
+    justify-content: flex-start;
+  }
+
+  .table-games {
+    width: 223px;
+  }
+
+  .choose-date__group-name {
+    flex: 0 0 251px;
+    gap: 15px;
+  }
+
+  .choose-date__group-contacts {
+    flex: 0 0 254px;
+  }
+
+  .choose-date__label {
+    line-height: 1.15;
+    gap: 5px;
+  }
+
+  .choose-date__group-contacts {
+    gap: 15px;
+  }
+
+  .choose-date {
+    margin-bottom: 50px;
+    justify-content: center;
+  }
+
+  .form__button-wrap {
+    width: 904px;
+  }
+
+  .form__button {
+    font-size: 18px;
+    line-height: 1.33;
+    text-transform: uppercase;
+    padding: 10px 43px;
+  }
+
+
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .booking {
+    padding: 50px 0px 49px;
+    margin-bottom: 30px;
+  }
+
+  .booking__title {
+    margin-bottom: 40px;
+    line-height: 1.5;
+  }
+
+  .form__legend {
+    margin-bottom: 30px;
+  }
+
+  .choose-room {
+    gap: unset;
+    margin-bottom: 51px;
+    justify-content: space-between;
+  }
+
+  .choose-room__label {
+    flex-basis: auto;
+    font-size: 16px;
+    line-height: 1.25;
+    border-radius: 6px;
+    min-width: 150px;
+    padding: 5px 0;
+  }
+
+  .game-consoles {
+    gap: 35px;
+  }
+
+  .collect-kits__group {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 40px 137px;
+  }
+
+  .game-consoles__label {
+    padding-left: 60px;
+  }
+
+  .game-consoles__input::before {
+    width: 40px;
+    height: 40px;
+  }
+
+  .table-games,
+  .additionally {
+    gap: 35px;
+  }
+
+  .table-games__input::before,
+  .additionally__input::before {
+    top: -8px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .table-games__label,
+  .additionally__label {
+    padding-left: 60px;
+  }
+
+  .collect-kits {
+    margin-bottom: 57px;
+  }
+
+  .choose-date {
+    flex-wrap: wrap;
+    gap: 43px 106px;
+    margin-bottom: 48px;
+  }
+
+  .choose-date__group {
+    flex-direction: row;
+    gap: 106px;
+  }
+
+  .choose-date__group-time {
+    margin-bottom: 0;
+    min-width: 280px;
+    gap: 14px;
+  }
+
+  .choose-date__label {
+    gap: 5px;
+  }
+
+  .choose-date__input {
+    padding: 9px 20px;
+  }
+
+  .choose-date__input-people {
+    min-width: 300px;
+    padding: 10px 20px;
+  }
+
+  .form__button-wrap {
+    width: 688px;
+  }
+}
+
+@media (max-width: 767px) {
+  .booking {
+    padding: 30px 0px 30px;
+    margin-bottom: 15px;
+  }
+
+  .booking__title {
+    line-height: 1.43;
+    margin-bottom: 13px;
+  }
+
+  .form__legend {
+    font-size: 14px;
+    line-height: 1.28;
+    margin-bottom: 15px;
+  }
+
+  .choose-room {
+    flex-wrap: wrap;
+    gap: 14px 20px;
+    margin-bottom: 30px;
+  }
+
+  .choose-room__label {
+    flex-basis: 130px;
+    font-size: 14px;
+    line-height: 1.29;
+    border-radius: 4px;
+    padding: 3px 0;
+  }
+
+  .collect-kits {
+    margin-bottom: 34px;
+  }
+
+  .collect-kits__group {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 28px;
+  }
+
+  .game-consoles {
+    gap: 27px;
+  }
+
+  .game-consoles__legend {
+    margin-bottom: 24px;
+  }
+
+  .game-consoles__input::before {
+    width: 30px;
+    height: 30px;
+  }
+
+  .game-consoles__label {
+    gap: 40px;
+    font-size: 16px;
+    line-height: 1.14;
+    padding-left: 50px;
+  }
+
+  .game-consoles__input::before {
+    position: absolute;
+    top: -19px;
+    left: -2px;
+  }
+
+  .table-games,
+  .additionally {
+    gap: 32px;
+  }
+
+  .table-games__input::before,
+  .additionally__input::before {
+    top: -10px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .table-games__input::after,
+  .additionally__input::after {
+    top: -2px;
+    left: 5px;
+  }
+
+  .table-games__label,
+  .additionally__label {
+    position: relative;
+    font-size: 16px;
+    padding-left: 50px;
+    line-height: 1.14;
+  }
+
+  .table-games__legend {
+    margin-bottom: 23px;
+  }
+
+  .additionally__legend {
+    margin-bottom: 23px;
+  }
+
+  .choose-date {
+    gap: 36px;
+    margin-bottom: 35px;
+    flex-wrap: wrap;
+  }
+
+  .form__group {
+    justify-content: flex-start;
+  }
+
+  .choose-date__group {
+    flex: 0 0 280px;
+    justify-content: flex-end;
+  }
+
+  .choose-date__group-time {
+    gap: 12px;
+    margin-bottom: 15px;
+  }
+
+  .choose-date__legent {
+    margin-bottom: 24px;
+    gap: 6px;
+  }
+
+  .choose-date__label {
+    gap: 5px;
+  }
+
+  .choose-date__input {
+    padding: 9px 20px;
+  }
+
+  .choose-date__group-contacts {
+    display: flex;
+    flex: 0 0 280px;
+  }
+
+  .form__button-wrap {
+    justify-content: center;
+    width: 280px;
+  }
+
+  .form__button {
+    border-radius: 4px;
+    background-color: var(--white-color, #ffffff);
+    color: var(--dark-magenta, #6c0287);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.45;
+    padding: 13px 56px 14px;
+  }
 }

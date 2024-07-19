@@ -1,0 +1,13 @@
+@import "header/header.css";
+@import "nav/nav.css";
+@import "banner/banner.css";
+@import "functional/functional.css";
+@import "halls/halls.css";
+@import "booking/booking.css";
+@import "about/about.css";
+@import "reviews/reviews.css";
+@import "faq/faq.css";
+@import "contacts/contacts.css";
+@import "social/social.css";
+@import "logo/logo.css";
+@import "mobile-menu/mobile-menu.css"

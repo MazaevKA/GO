@@ -28,3 +28,28 @@
 .nav__link:active {
   color: var(--dark-violet, #640AA3);
 }
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .nav__list > :not(:last-child) {
+    margin-right: 20px;
+  }
+
+  .nav__item {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .nav {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .nav {
+    display: none;
+  }
+}

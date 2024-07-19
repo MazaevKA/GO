@@ -1,14 +1,17 @@
 @import "var.css";
 @import "normalize.css";
 @import "global.css";
-@import "../blocks/header/header.css";
-@import "../blocks/nav/nav.css";
-@import "../blocks/banner/banner.css";
-@import "../blocks/functional/functional.css";
-@import "../blocks/halls/halls.css";
-@import "../blocks/booking/booking.css";
-@import "../blocks/about/about.css";
-@import "../blocks/reviews/reviews.css";
-@import "../blocks/faq/faq.css";
-@import "../blocks/contacts/contacts.css";
-@import "../blocks/social/social.css";
+@import "../blocks/blocks.css";
+
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+}
+
+@media (max-width: 767px) {
+
+}

@@ -71,6 +71,9 @@ iframe {
   border: none;
 }
 
+blockquote {
+  margin: 0;
+}
 /*
 Доступно скрываю элементы
 */
@@ -89,8 +92,44 @@ iframe {
 .title {
   font-weight: 700;
   font-size: 40px;
-  line-height: 50px;
+  line-height: 1.25;
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 60px;
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .container {
+    min-width: 1024px;
+    max-width: 1440px;
+    padding: 0 60px;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    min-width: 768px;
+    max-width: 1023px;
+    padding: 0 40px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    min-width: 280px;
+    max-width: 767px;
+    padding: 0 20px;
+  }
+
+  .title {
+    font-size: 14px;
+  }
 }

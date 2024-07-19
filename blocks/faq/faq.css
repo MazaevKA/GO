@@ -2,6 +2,10 @@
   padding: 50px 0;
 }
 
+.faq__title {
+  margin-bottom: 47px;
+}
+
 .faq__list {
   margin: 0;
   padding: 0;
@@ -9,7 +13,7 @@
 
 .faq__item {
   position: relative;
-  display:flow-root;
+  display: flow-root;
   font-weight: 700;
   font-size: 24px;
   margin-bottom: 20px;
@@ -21,41 +25,42 @@
 }
 
 .faq__item--background--white {
-  background-color: var(--white-color, #FFFFFF);
-  
+  background-color: var(--white-color, #ffffff);
 }
 
 .faq__item--background--purple {
-  background-color: var(--very-dark-magenta, #440F51);
-  
+  background-color: var(--very-dark-magenta, #440f51);
 }
 
 .faq__button {
-  position: relative;
-  /* display: block; */
-  line-height: 46px;
-  padding: 20px 70px;
+  font-size: 24px;
+  line-height: 1.16;
+  font-weight: 700;
+  padding: 30px 70px 29px;
   text-align: start;
   width: 100%;
 }
 
 .faq__button--color--graphite {
-  color: #1C1A1A;
+  color: #1c1a1a;
 }
 
 .faq__button--color--white {
-  color: var(--text-color, #FFFFFF);
+  color: var(--text-color, #ffffff);
 }
 
-.faq__button--color--graphite::after, .faq__button--color--white::after {
+.faq__button--color--graphite::after,
+.faq__button--color--white::after {
   position: absolute;
   content: "";
   display: inline-block;
   vertical-align: middle;
+  top: 50%;
   right: 70px;
   width: 46px;
   height: 46px;
-  transition: background .2s ease-in;
+  transition: background 0.2s ease-in;
+  transform: translatey(-50%);
 }
 
 .faq__button--color--graphite::after {
@@ -84,4 +89,150 @@
 
 .faq__button--color--white:active::after {
   background: url("img/open-active.svg") no-repeat center / contain;
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .faq {
+    padding: 35px 0;
+  }
+
+  .faq__title {
+    line-height: 1.33;
+    margin-bottom: 24px;
+  }
+
+  .faq__item {
+    margin-bottom: 16px;
+  }
+
+  .faq__item:last-child {
+    display: none;
+  }
+
+  .faq__item:nth-child(n+4) {
+    margin-bottom: 0;
+  }
+
+  .faq__item--background--purple {
+    background-color: var(--white-color);
+  }
+
+  .faq__button--color--white::after {
+    background: url(img/open-purple.svg) no-repeat center / contain;
+  }
+
+  .faq__button--color--white {
+    color: #1c1a1a;
+  }
+
+  .faq__button {
+    font-size: 20px;
+    line-height: 1.2;
+    padding: 23px 70px 23px 30px;
+  }
+
+  .faq__button--color--graphite::after,
+  .faq__button--color--white::after {
+    top: 50%;
+    right: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .faq {
+    padding: 30px 0 35px;
+  }
+
+  .faq__title {
+    line-height: 1.09;
+    margin-bottom: 29px;
+  }
+
+  .faq__button {
+    font-size: 18px;
+    line-height: 1.33;
+    padding: 23px 59px 24px;
+  }
+
+  .faq__button--color--graphite::after,
+  .faq__button--color--white::after {
+    top: 50%;
+    right: 65px;
+    width: 46px;
+    height: 46px;
+  }
+
+  .faq__item {
+    margin-bottom: 15px;
+  }
+
+  .faq__item:last-child {
+    display: none;
+  }
+
+  .faq__item:nth-child(n+4) {
+    margin-bottom: 0;
+  }
+
+  .faq__item--background--purple {
+    background-color: var(--white-color);
+  }
+
+  .faq__button--color--white::after {
+    background: url(img/open-purple.svg) no-repeat center / contain;
+  }
+
+  .faq__button--color--white {
+    color: #1c1a1a;
+  }
+}
+
+@media (max-width: 767px) {
+  .faq {
+    padding: 15px 0 15px;
+}
+
+  .faq__title {
+    line-height: 1.5;
+    margin-bottom: 13px;
+  }
+
+  .faq__button {
+    font-size: 12px;
+    line-height: 1.34;
+    padding: 7px 43px 7px 13px;
+  }
+
+  .faq__button--color--graphite::after,
+  .faq__button--color--white::after {
+    right: 13px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .faq__item {
+    display: flex;
+    margin-bottom: 10px;
+    height: 46px;
+  }
+
+  .faq__item:last-child {
+    display: none;
+  }
+
+  .faq__item:nth-child(n+4) {
+    margin-bottom: 0;
+  }
+
+  .faq__item--background--purple {
+    background-color: var(--white-color);
+  }
+
+  .faq__button--color--white::after {
+    background: url(img/open-purple.svg) no-repeat center / contain;
+  }
+
+  .faq__button--color--white {
+    color: #1c1a1a;
+  }
 }

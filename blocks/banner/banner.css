@@ -77,7 +77,7 @@
 }
 
 .banner__link:hover {
-  background-color: var(--dark-magenta, #840AA3);
+  background-color: var(--dark-magenta-light, #840AA3);
 }
 
 .banner__link:focus {

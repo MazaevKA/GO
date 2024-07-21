@@ -3,7 +3,7 @@
 }
 
 .back-link {
-  display: flex;
+  display: inline-flex;
   gap: 10px;
   font-weight: 700;
   font-size: 22px;
